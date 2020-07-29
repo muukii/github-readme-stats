@@ -1,9 +1,8 @@
 <p align="center">
- <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="Github Readme Stats" />
+ <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">GitHub Readme Stats</h2>
  <p align="center">Get dynamically generated GitHub stats on your readmes!</p>
 </p>
-
   <p align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats/actions">
       <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
@@ -16,6 +15,14 @@
     </a>
     <a href="https://github.com/anuraghazra/github-readme-stats/pulls">
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/anuraghazra/github-readme-stats?color=0088ff" />
+    </a>
+    <br />
+    <br />
+    <a href="https://a.paddle.com/v2/click/16413/119403?link=1227">
+      <img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
+    </a>
+    <a href="https://a.paddle.com/v2/click/16413/119403?link=2345">
+      <img src="https://img.shields.io/badge/Supported%20by-Node%20Cli.com%20%E2%86%92-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/>
     </a>
   </p>
 
@@ -30,6 +37,10 @@
     <a href="readme_cn.md">简体中文</a>
     ·
     <a href="readme_es.md">Español</a>
+    ·
+    <a href="readme_de.md">Deutsch</a>
+    ·
+    <a href="readme_ja.md">日本語</a>
   </p>
 </p>
 <p align="center">Loved the project? Please consider <a href="https://www.paypal.me/anuraghazra">donating</a> to help it improve!
@@ -99,7 +110,7 @@ Use `?theme=THEME_NAME` parameter like so :-
 
 dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula
 
-<img src="https://res.cloudinary.com/anuraghazra/image/upload/v1595174536/grs-themes_l4ynja.png" alt="Github Readme Stat Themes" width="600px"/>
+<img src="https://res.cloudinary.com/anuraghazra/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stat Themes" width="600px"/>
 
 You can look at a preview for [all available themes](./themes/README.md) or checkout the [theme config file](./themes/index.js) & **you can also contribute new themes** if you like :D
 
@@ -123,9 +134,9 @@ Customization Options:
 | show_owner    | boolean   | shows owner name in repo card               | N/A                  | false               | N/A                     |
 | show_icons    | boolean   | shows icons                                 | false                | N/A                 | N/A                     |
 | theme         | string    | sets inbuilt theme                          | 'default'            | 'default_repocard'  | 'default'               |
-| cache_seconds | number    | manually set custom cache control           | 1800                 | 1800                | '1800'                  |
+| cache_seconds | number    | manually set custom cache control           | 1800                 | 1800                | 1800                    |
 | count_private | boolean   | counts private contributions too if enabled | false                | N/A                 | N/A                     |
-| layout        | string    | choose a layout option                      | N/A                  | N/A                 | "default"               |
+| layout        | string    | choose a layout option                      | N/A                  | N/A                 | 'default'               |
 
 > Note on cache: Repo cards have default cache of 30mins (1800 seconds) if the fork count & star count is less than 1k otherwise it's 2hours (7200). Also note that cache is clamped to minimum of 30min and maximum of 24hours
 
@@ -176,6 +187,10 @@ You can use `?hide=language1,language2` parameter to hide individual languages.
 ```md
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)](https://github.com/anuraghazra/github-readme-stats)
 ```
+
+> :warning: **Important:**  
+> Language names should be uri-escaped, as specified in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)  
+> (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.)
 
 ### Compact Language Card Layout
 
